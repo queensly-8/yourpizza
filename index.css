@@ -253,7 +253,7 @@ footer{
     font-family: Della Respira, sans-serif;
 }
 
-.has-img2-bg{
+footer .has-img2-bg{
     background: url(image/Pizza2.png) no-repeat center center;
     background-size: cover;
 }
