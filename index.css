@@ -1,0 +1,259 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira&display=swap');
+
+/* Text */
+.navbar-brand{
+position: absolute;
+width: 74px;
+height: 24px;
+left: 130px;
+top: 23px;
+
+}
+
+.navbar {
+    background-color: transparent !important; /* Makes the navbar background transparent */
+    position: absolute; /* Positions the navbar over the hero section */
+    width: 100%; /* Ensures the navbar takes the full width */
+    z-index: 10; /* Ensures the navbar stays above the hero section */
+    font-family: Della Respira, sans-serif;
+}
+.navbar-logo {
+    height: 40px; /* Adjust this value as needed */
+    width: auto; /* Maintains the aspect ratio */
+    margin-right: 10px; /* Optional: add margin for spacing */
+}
+
+.navbar-nav .form-inline {
+    overflow: hidden;
+    max-width: 0;
+    transition: max-width 0.3s ease;
+}
+
+.navbar-nav .search-icon {
+    cursor: pointer;
+    margin-right: 10px; /* Adjust as needed */
+}
+
+.navbar-nav:hover .form-inline, .navbar-nav:hover .search-icon {
+    max-width: 200px; /* Adjust as needed */
+}
+
+.custom-navbar {
+    background-color: green; /* Custom background color */
+    position: absolute; /* Position over the hero section */
+    width: 100%; /* Full width */
+    z-index: 10; /* Stay above the hero section */
+}
+.form-inline {
+    display: none; /* Initially hide the search form */
+}
+.fa-magnifying-glass:hover + .form-inline {
+    display: inline-block; /* Show the search form on hover */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a slight dark overlay */
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+#landing {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(./image/pizza4.png);
+    background-size: cover; /* Ensures the background image covers the entire element */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat;
+    height: 100vh; /* Sets the height of the element to 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    font-family: Pacifico, sans-serif;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adds a slight dark overlay */
+    z-index: 1;
+}
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+  
+#landing h1 {
+    color: white; /* Ensure the text is readable */
+    text-align: center; /* Center the text */
+}
+#title{
+    font-size: 60px;
+}
+#about{
+    font-family: Della Respira, sans-serif;
+    background-color: black;
+    color: #fff;
+}
+#text-title{
+    font-family: Pacifico, sans-serif;
+    font-size: 30px;
+}
+
+/* base */
+#base{
+    background-color: red;
+    color: white;
+    border-radius: 50px;
+    padding: 1rem;
+}
+
+
+.navbar {
+    background-color: green; /* Makes the navbar background transparent */
+}
+.navbar-logo {
+    height: 80px; /* Adjust this value as needed */
+    width: auto; /* Maintains the aspect ratio */
+    /* Optionally, you can add some margin to ensure it doesn't touch the navbar edges */
+    margin-right: 10px;
+}
+
+.has-img-bg {
+    background: url(./image/pizza5.png) no-repeat center center;
+    background-size: cover;
+  }
+
+.image-container {
+    overflow: hidden; /* Ensures the image doesn't overflow its container */
+}
+  
+.image-container img {
+    display: block;
+    transition: transform 0.3s ease; /* Smooth transition effect */
+}
+  
+.image-container img:hover {
+    transform: scale(1.1); /* Enlarge the image on hover */
+  }
+
+
+
+.carousel {
+    height: 50vh; /* Set the height of the carousel */
+    border-radius: 15px; /* Adds rounded corners to the carousel */
+    overflow: hidden; /* Ensures the images stay within the rounded corners */
+}
+.carousel-item img {
+    object-fit: cover; /* Ensures the images cover the carousel area */
+    height: 50vh; /* Ensures the images take the full height of the carousel */
+    width: 100%; /* Ensures the images take the full width of the carousel */
+}
+.carousel-inner {
+    position: relative;
+}
+.carousel-label {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+    height: auto;
+    text-align: center; /* Center text horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carousel-label h2 {
+    margin: 0;
+}
+.carousel-label p {
+    margin: 10px 0 0 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+.carousel:hover .carousel-label {
+    bottom: 0;
+    height: 100%;
+}
+.carousel:hover .carousel-label p {
+    opacity: 1;
+}
+
+
+/* CARDS */
+.dim-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Initial dim background */
+    z-index: 1;
+    transition: background 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .dim-overlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .dim-overlay h5 {
+    color: white !important;
+    font-size: 24px;
+    transition: color 0.3s ease; /* Smooth transition on hover */
+  }
+  
+  .dim-card:hover .dim-overlay::before {
+    background: rgba(0, 0, 0, 0.7); /* Darker dim background on hover */
+  }
+  
+  .dim-card:hover .dim-overlay h5 {
+    color: #fff !important; /* Highlight text on hover */
+  }
+
+  .card-img {
+    object-fit: cover; /* Ensure image covers the entire card area */
+    width: 100%;
+    height: 100%;
+  }
+  
+  .card {
+    height: 300px; /* Ensure all cards have equal height */
+  }
+
+  .card-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* end */
+
+
+footer{
+    background: black;
+    color: #fff;
+    font-family: Della Respira, sans-serif;
+}
+
+.has-img2-bg{
+    background: url(image/Pizza2.png) no-repeat center center;
+    background-size: cover;
+}
